@@ -1956,6 +1956,7 @@ func TestGetCapabilitiesSuccessCase(t *testing.T) {
 			Properties: map[string]string{
 				"serName":  "FaceRegService6",
 				"mecState": "ACTIVE",
+				"version":  "3.2.1",
 			},
 		})
 		return &response, nil
@@ -2005,6 +2006,7 @@ func TestGetCapabilitiesWithConsumers(t *testing.T) {
 			Properties: map[string]string{
 				"serName":  "FaceRegService6",
 				"mecState": "ACTIVE",
+				"version":  "3.2.1",
 			},
 		})
 		return &response, nil
@@ -2067,6 +2069,7 @@ func TestGetCapabilitiesWithMultiConsumers(t *testing.T) {
 			Properties: map[string]string{
 				"serName":  "FaceRegService6",
 				"mecState": "ACTIVE",
+				"version":  "3.2.1",
 			},
 		})
 		return &response, nil
@@ -2130,6 +2133,7 @@ func TestGetCapabilitiesWithMultiCapabilityMultiConsumers(t *testing.T) {
 			Properties: map[string]string{
 				"serName":  "FaceRegService6",
 				"mecState": "ACTIVE",
+				"version":  "3.2.1",
 			},
 		})
 		response.Instances = append(response.Instances, &proto.MicroServiceInstance{
@@ -2210,6 +2214,7 @@ func TestGetCapabilitiesWithMultiConsumersAndServiceNameFilter(t *testing.T) {
 			Properties: map[string]string{
 				"serName":  "FaceRegService6",
 				"mecState": "ACTIVE",
+				"version":  "3.2.1",
 			},
 		})
 		return &response, nil
@@ -2276,6 +2281,7 @@ func TestGetCapabilitiesWithMultiConsumersAndCategoryFilter(t *testing.T) {
 				svcCatId:      "id12345",
 				svcCatName:    "RNI",
 				svcCatVersion: "v1.1",
+				"version":     "3.2.1",
 			},
 		})
 		return &response, nil
